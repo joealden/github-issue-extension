@@ -8,7 +8,7 @@ const TestingComponent: React.FunctionComponent = () => {
       <Toolbar>
         <button>x</button>
       </Toolbar>
-      <p>Testing ss</p>
+      <p>Testing Embed</p>
     </Wrapper>
   );
 };
@@ -40,6 +40,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 20px;
+
+  p {
+    margin-left: 10px;
+  }
 `;
 
 const rootNodeId = "___github-issue-extension-root";
