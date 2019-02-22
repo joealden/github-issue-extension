@@ -1,16 +1,26 @@
 {
   "manifest_version": 2,
+
   "name": "Gissues",
   "description": "A cross browser extension for quickly creating github issues.",
+  "homepage_url": "https://github.com/joealden/github-issue-extension",
   "version": "0.1.0",
   "icons": {
     "512": "icons/test.png"
   },
 
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": "icons/test.png",
+    "default_title": "Gissues",
+    "default_popup": "browserAction/popup.html"
+  },
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["embed.js"]
+      "js": ["contentScripts/embed.js"]
     }
   ]
 }

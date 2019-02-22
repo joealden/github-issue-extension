@@ -4,10 +4,13 @@ const WebpackBar = require("webpackbar");
 
 module.exports = {
   mode: "production",
-  entry: "./src/embed.tsx",
+  entry: {
+    "browserAction/popup": "./src/browserAction/popup.tsx",
+    "contentScripts/embed": "./src/contentScripts/embed.tsx"
+  },
   output: {
     path: path.resolve(__dirname, "webpack-dist"),
-    filename: "embed.js"
+    filename: "[name].js"
   },
 
   module: {
@@ -47,6 +50,10 @@ module.exports = {
       {
         from: "src/icons",
         to: "icons"
+      },
+      {
+        from: "src/browserAction/popup.html",
+        to: "browserAction/popup.html"
       }
     ]),
     new WebpackBar()
