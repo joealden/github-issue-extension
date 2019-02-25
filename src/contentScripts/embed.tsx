@@ -13,6 +13,36 @@ const TestingComponent: React.FunctionComponent = () => {
   );
 };
 
+const Wrapper = styled.div`
+  /* Ensures that other page styles don't effect the embed */
+  all: initial;
+
+  * {
+    all: initial;
+    font-size: 20px;
+    color: black;
+  }
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 400px;
+  height: 300px;
+  z-index: 99999999999999;
+
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-left: 10px;
+  }
+`;
+
 const Toolbar = styled.div`
   background-color: grey;
   width: 100%;
@@ -22,27 +52,6 @@ const Toolbar = styled.div`
 
   button {
     background-color: blue;
-  }
-`;
-
-const Wrapper = styled.div`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 400px;
-  height: 300px;
-  z-index: 99999999999999;
-  box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-
-  p {
-    margin-left: 10px;
   }
 `;
 
