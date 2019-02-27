@@ -2,7 +2,7 @@ import React from "react";
 import { Rnd } from "react-rnd";
 import styled from "styled-components";
 
-import Toolbar from "./components/Toolbar";
+import TitleBar from "./components/TitleBar";
 
 const Embed: React.FunctionComponent = () => {
   return (
@@ -26,7 +26,7 @@ const Embed: React.FunctionComponent = () => {
           bounds="parent"
         >
           <InnerWrapper>
-            <Toolbar />
+            <TitleBar />
           </InnerWrapper>
         </Rnd>
       </div>
