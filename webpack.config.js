@@ -6,11 +6,15 @@ module.exports = {
   mode: "production",
   entry: {
     "browserAction/popup": "./src/browserAction/popup.tsx",
-    "contentScripts/embed": "./src/contentScripts/embed.tsx"
+    "contentScripts/injectEmbed": "./src/contentScripts/injectEmbed.tsx"
   },
   output: {
     path: path.resolve(__dirname, "webpack-dist"),
     filename: "[name].js"
+  },
+
+  resolve: {
+    extensions: [".js", ".ts", ".tsx"]
   },
 
   module: {
