@@ -4,6 +4,8 @@ A Cross Browser Extension For Quickly Creating Github Issues.
 
 ## TODO
 
+- Make it so that clicking on the buttons in the toolbar doesn't allow for
+  dragging to move the embed window.
 - Setup eslint
   - Prettier preset
     - https://prettier.io/docs/en/eslint.html
