@@ -25,16 +25,16 @@
     "styled-components": "^4.1.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@types/chrome": "^0.0.81",
     "@types/firefox-webext-browser": "^65.0.2",
-    "@types/jest": "^24.0.6",
-    "@types/react": "^16.8.4",
+    "@types/jest": "^24.0.9",
+    "@types/react": "^16.8.5",
     "@types/react-dom": "^16.8.2",
-    "@types/styled-components": "^4.1.10",
+    "@types/styled-components": "^4.1.11",
     "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0",
     "copy-webpack-plugin": "^5.0.0",
@@ -48,6 +48,6 @@
     "webpackbar": "^3.1.5"
   },
   "resolutions": {
-    "@types/react": "16.8.4"
+    "@types/react": "16.8.5"
   }
 }
