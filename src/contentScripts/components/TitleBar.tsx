@@ -4,9 +4,13 @@ import styled from "styled-components";
 import Cog from "./icons/Cog";
 import Cross from "./icons/Cross";
 
-const Toolbar: React.FunctionComponent = () => {
+type TitleBarProps = {
+  className: string;
+};
+
+const TitleBar: React.FunctionComponent<TitleBarProps> = ({ className }) => {
   return (
-    <ToolbarWrapper className="___embed-drag-handle">
+    <TitleBarWrapper className={className}>
       <h1>Create Issue</h1>
       <div>
         <button onClick={() => console.log("test")}>
@@ -16,13 +20,13 @@ const Toolbar: React.FunctionComponent = () => {
           <Cross />
         </button>
       </div>
-    </ToolbarWrapper>
+    </TitleBarWrapper>
   );
 };
 
-export default Toolbar;
+export default TitleBar;
 
-const ToolbarWrapper = styled.div`
+const TitleBarWrapper = styled.div`
   background-color: #f0f0f0;
   display: flex;
   padding: 10px;

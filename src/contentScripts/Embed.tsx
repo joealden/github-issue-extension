@@ -4,12 +4,14 @@ import styled from "styled-components";
 
 import TitleBar from "./components/TitleBar";
 
+const DRAG_HANDLE_CLASS_NAME = "___embed-drag-handle";
+
 const Embed: React.FunctionComponent = () => {
   return (
     <InvisibleWrapper>
       <div>
         <Rnd
-          dragHandleClassName="___embed-drag-handle"
+          dragHandleClassName={DRAG_HANDLE_CLASS_NAME}
           style={{
             background: "white",
             pointerEvents: "initial",
@@ -26,7 +28,7 @@ const Embed: React.FunctionComponent = () => {
           bounds="parent"
         >
           <InnerWrapper>
-            <TitleBar />
+            <TitleBar className={DRAG_HANDLE_CLASS_NAME} />
           </InnerWrapper>
         </Rnd>
       </div>
