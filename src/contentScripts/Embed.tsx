@@ -56,4 +56,21 @@ const InvisibleWrapper = styled.div`
 const InnerWrapper = styled.div`
   /* Ensures that other page styles don't effect the embed */
   all: initial;
+  * {
+    all: unset;
+  }
+
+  /**
+   * For some reason, the above 'all: unset' rule doesn't reset
+   * the value of '::-moz-focus-inner', which some sites use to
+   * get rid of the focus ring that is present in firefox. This
+   * rule below ensures that the focus ring is enabled again.
+   *
+   * TODO:
+   * Check that the focus ring in chrome is also correctly
+   * displayed on sites that get rid of it.
+   */
+  button:focus::-moz-focus-inner {
+    border: 1px dotted black;
+  }
 `;
