@@ -11,8 +11,8 @@
     "url": "git+https://github.com/joealden/github-issue-extension.git"
   },
   "scripts": {
-    "build:webpack": "webpack",
-    "build:webpack:watch": "webpack --watch",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
     "test:ext": "web-ext run --source-dir=webpack-dist/",
     "test:jest": "jest --verbose",
     "test:types": "tsc",
