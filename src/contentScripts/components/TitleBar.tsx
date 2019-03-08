@@ -27,46 +27,34 @@ const TitleBar: React.FunctionComponent<TitleBarProps> = ({ className }) => {
 export default TitleBar;
 
 const TitleBarWrapper = styled.div`
-  background-color: #f0f0f0;
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-  align-items: center;
-
-  cursor: move;
-
-  h1 {
-    font-weight: normal;
-    font-size: 20px;
-    padding: 15px;
-  }
-
-  div {
+  && {
+    background-color: #f0f0f0;
     display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
 
-    button {
-      background: none;
-      border: none;
-      font-size: 20px;
+    cursor: move;
+
+    h1 {
       font-weight: normal;
+      font-size: 20px;
       padding: 15px;
-      cursor: pointer;
+    }
 
+    div {
       display: flex;
-      align-items: center;
 
-      svg {
-        color: black;
-      }
+      button {
+        background: none;
+        border: none;
+        font-size: 20px;
+        font-weight: normal;
+        padding: 15px;
+        cursor: pointer;
 
-      &:first-child svg {
-        width: 25px;
-        height: 25px;
-      }
-
-      &:last-child svg {
-        width: 30px;
-        height: 30px;
+        display: flex;
+        align-items: center;
       }
     }
   }
