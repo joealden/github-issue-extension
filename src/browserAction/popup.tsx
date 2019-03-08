@@ -35,7 +35,7 @@ const PopupWrapper = styled.div`
   align-items: center;
 
   width: 400px;
-  height: 500px;
+  height: 300px;
 `;
 
 ReactDOM.render(<Popup />, document.getElementById("popup"));
